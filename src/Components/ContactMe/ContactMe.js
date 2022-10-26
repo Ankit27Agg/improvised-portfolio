@@ -23,8 +23,7 @@ const ContactMe = () => {
                                 worltresting@gmail.com
                             </a>
                             <div className='cv'>
-                                <a href='https://docs.google.com/document/d/1PumEu2nbKvNyB_1Al5RWYmSki2DM3IQk/
-            edit?usp=sharing&ouid=105663189767640127668&rtpof=true&sd=true'
+                                <a href='https://drive.google.com/file/d/1-eIWHbXM1nCrZ5m5hOOlSBgQrFk3fHoE/view?usp=sharing'
                                     target="_blank"
                                     rel="noopener noreferrer"><Button variant="outlined" disableRipple>Resume</Button></a>
                             </div>

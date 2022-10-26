@@ -37,7 +37,7 @@ export default function Header() {
         <li><a href='#contact-me' className='menu-a'>Contact Me</a></li>
       </ul>
       <div className='cv-button'>
-        <a href='https://drive.google.com/file/d/1OyflWDpBS7bl3XvHQctctQ2jqhAXX190/view?usp=sharing'
+        <a href='https://drive.google.com/file/d/1-eIWHbXM1nCrZ5m5hOOlSBgQrFk3fHoE/view?usp=sharing'
           target="_blank"
           rel="noopener noreferrer"><Button style={size} variant="outlined" disableRipple>Download CV</Button></a>
       </div>
