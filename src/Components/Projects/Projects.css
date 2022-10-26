@@ -1,0 +1,116 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(218, 238, 255);
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 5rem;
+}
+.project-heading{
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(218, 238, 255);
+    justify-content: center;
+    align-items: center;
+    /* padding: 7rem 5rem; */
+    flex-wrap: wrap;
+}
+.projects-card{
+    background-color: white;
+    /* box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    padding-top: 2rem;
+    margin: 1rem 1.5rem;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    /* background-color: #fff;
+    background-color: rgba(255,255,255,0.4); */
+    /* opacity: 0.2; */
+}
+.projects-card img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+}
+.same{
+    transition: all 0.5s ease;
+}
+.card-text{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.card-modal{
+    background-color: rgb(218, 238, 255);
+    border-radius: 1rem;
+    display: none;
+    color: black;
+    box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.projects-card:hover{
+    box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
+}
+.projects-card:hover .same{
+    opacity: 0.5;
+}
+.projects-card:hover  .card-modal{
+    /* opacity: 0.2; */
+    display: block;
+    position: absolute;
+}
+.modal-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-tech{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 1rem;
+}
+.modal-img{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0.5rem;
+    /* padding: 0.8rem; */
+}
+.modal > div{
+    background-color: rgba(0,0,0,0.2);
+}
+.project-desc{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media (max-width:400px) {
+    .modal-box > div{
+        border-radius: 5%;
+        height: 20rem;
+        width: 18rem;
+        margin: auto;
+    }
+    .project-desc{
+        background-color: white;
+        /* padding: 1rem; */
+        border-radius: 1rem;
+        /* margin: 1rem; */
+    }
+}

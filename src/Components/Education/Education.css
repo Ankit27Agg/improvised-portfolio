@@ -1,0 +1,128 @@
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 246, 246);
+    padding-bottom: 5rem;
+}
+.education-heading{
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 4rem 0;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+.education-card{
+    display: flex;
+    flex-direction: row;
+}
+.details{
+    background-color: white;
+    height:17rem;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.details::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgb(246, 203, 11);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+}
+.details:hover::before{
+    width: 100%;
+}
+.details .name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 1rem ;
+    z-index: 100;
+}
+.details ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    z-index: 100;
+}
+.details ul li{
+    text-decoration: none;
+    /* margin: 0rem 0.8rem; */
+    align-items: inherit;
+    color: gray;
+    margin-left:-5rem;
+}
+.year{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    height: 17rem;
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.year .year-text{
+    position: relative;
+}
+.year .year-text::before{
+    position: absolute;
+    content: attr(dataContent);
+    width: 0%;
+    height: 100%;
+    color: rgb(246, 203, 11);
+    /* align-items: center;
+    display: block;
+    justify-content: center; */
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.year .year-text:hover::before{
+    width: 100%;
+}
+
+@media (max-width:400px){
+    .education-card{
+        display: flex;
+        flex-direction: row;
+    }
+    .details{
+        height: 11rem;
+        width: 11rem;
+    }
+    .details .name{
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .year{
+        height: 11rem;
+        width: 11rem;
+    }
+    .year .year-text{
+        color: rgb(246, 203, 11);
+    }
+    .details ul{
+        margin-top: 0.5rem;
+    }
+    .details ul li{
+        font-size: 0.7rem;
+        margin-left: -1rem;
+        
+    }
+}

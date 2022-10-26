@@ -1,0 +1,265 @@
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 9rem;
+    align-items: center;
+    background: linear-gradient(
+        to top,
+        black, 
+        transparent
+      );
+    /* background-color: aquamarine; */
+    /* background-image: linear-gradient(to right, #4C131A, #B2505C); */
+    
+}
+.starting{
+    display: flex;
+    flex-direction: column;
+}
+.starting ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.starting ul li{
+    margin: 2rem 1rem 0 0;
+}
+.social-links{
+    /* border: 1rem solid red; */
+    margin-right: 10rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.social-links a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-right: 1rem;
+    color: aliceblue;
+}
+.intro-part{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 14rem 0 3rem;
+    /* border: 1rem solid red; */
+    align-items: center;
+    justify-content: center;
+    
+}
+/* .intro-part .intro-heading{
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    position: absolute;
+    bottom: 11rem;
+    color: white;
+} */
+.intro-heading{
+    font-size: 4.4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    color: white;
+    line-height: 4rem;
+    position: relative;
+}
+.intro-heading::before{
+    position: absolute;
+    content: "Ankit Aggarwal.";
+    width: 0%;
+    height: 100%;
+    color: rgb(246, 203, 11);
+    top: 0;
+    left: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.intro-heading:hover:before{
+    width: 100%;
+}
+/* .social-links a:hover{
+    color: linear-gradient( #4C131A, #B2505C);
+} */
+.intro-part img{
+    height: auto;
+    width: 20rem;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.intro-role{
+    color: rgb(246, 203, 11);
+}
+.connect-button{
+    /* margin-right: 10rem; */
+    /* border: 1rem solid red; */
+}
+.intro-description{
+    text-align: center;
+    color: thistle;
+}
+.connect{
+    padding: 1rem;
+    border-radius: 10%;
+    transition: all 0.5s ease;
+    width: 50rem;
+    margin-top: -7rem;
+}
+.connect-button{
+    border-radius: 10%;
+    border: 0.3rem solid white;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.intro .connect-button{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(246, 203, 11);
+    transition: all 0.5s ease;
+    /* box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-top: -7rem;
+}
+.intro .connect-button:hover{
+    box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* background-color:rgb(189, 157, 14); */
+    transform: scale(1.1);
+}
+.connect-button > a{
+    background-color: rgb(246, 203, 11);
+    box-shadow: none;
+}
+.connect-button > a:hover{
+    background-color: rgb(246, 203, 11);
+    box-shadow: none;
+}
+/* .connect > a{
+    transition: all 0.5s ease;
+}
+.connect > a:hover{
+    box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* background-color:rgb(189, 157, 14); */
+    /* transform: scale(1.1);
+} */
+@media (max-width:400px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-heading{
+        font-size: 3.7rem;
+        letter-spacing: normal;
+        font-weight: 800;
+        color: white;
+        line-height: 4rem;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .starting{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .starting ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: center;
+    }
+    .starting ul li{
+        margin: 2rem 1rem 0 0;
+    }
+    .social-links{
+        /* border: 1rem solid red; */
+        margin-right: 0rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+    .social-links a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        margin-right: 1rem;
+        color: aliceblue;
+    }
+    .intro-part{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem;
+        /* border: 1rem solid red; */
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .intro-part img{
+        height: auto;
+        margin: auto;
+        width: 15rem;
+        border-radius: 50%;
+        object-fit: contain;
+        box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .intro-description{
+        width: 21rem;
+        padding-bottom: 9rem;
+    }
+    .intro-role{
+        color: rgb(246, 203, 11);
+    }
+    .connect{
+        display: flex;
+        justify-content: center;
+        /* padding: 1rem; */
+        border-radius: 10%;
+        transition: all 0.5s ease;
+        width: 0rem;
+        height: 1rem;
+        /* margin-top: -7rem; */
+    }
+    .connect-button{
+        border-radius: 10%;
+        border: 0.3rem solid white;
+        /* padding: 0.5rem 1rem; */
+        align-items: center;
+        text-align: center;
+    }
+    .intro .connect-button{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        font-weight: 700;
+        background-color: rgb(246, 203, 11);
+        transition: all 0.5s ease;
+        height: 1.5rem;
+        /* box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+        margin-top: -2rem;
+        padding: 1.2rem 1rem;
+        border-radius: 10%;
+    }
+    .intro .connect-button:hover{
+        box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* background-color:rgb(189, 157, 14); */
+        transform: scale(1.1);
+    }
+    .connect-button > a{
+        background-color: rgb(246, 203, 11);
+        box-shadow: none;
+        height: 0rem;
+    }
+    .connect-button >a >span{
+        height: 0;
+    }
+    .connect-button > a:hover{
+        background-color: rgb(246, 203, 11);
+        box-shadow: none;
+    }
+}

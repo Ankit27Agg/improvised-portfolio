@@ -1,0 +1,53 @@
+.skills{
+    background: radial-gradient(27.19% 67.83% at 101.83% 2.63%, #abb3ff 0%, rgba(171,179,255,0) 100%),linear-gradient(134.39deg, #ea4c89 -6.16%, #4d44c6 85.98%);
+    padding: 5rem 4rem;
+    margin: 5rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-heading{
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+.skills-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.skill{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.1);
+    background-blend-mode: overlay;
+    padding: 2.4rem;
+    margin: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.skill:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 24px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skill img{
+    height: 5rem;
+    width: 5rem;
+    padding: 0.8rem;
+}
+.skills p {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top:1rem;
+}

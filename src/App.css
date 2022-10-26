@@ -1,0 +1,39 @@
+.same-bg{
+    background-image: linear-gradient(to right, #4C131A, #B2505C);
+    /* width: 100%; */
+}
+.top-btn{
+    color: black;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: rgb(246, 203, 11);
+    border: 1px solid rgb(246, 203, 11);
+    border-radius: 5%;
+    
+}
+.top-btn img{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    color: white;
+}
+@media (max-width:400px){
+    .top-btn{
+        border-radius: 2rem;
+        bottom: 1rem;
+        right: 1rem;
+        border: 5px solid white;
+    }
+    .top-btn img{
+        height: 1.5rem;
+        width: 1.5rem;
+        padding: 0.5rem 0.7rem;
+    }
+}
+/* html{
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+  } */
