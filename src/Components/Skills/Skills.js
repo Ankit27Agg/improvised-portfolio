@@ -46,7 +46,7 @@ export default function Skills() {
             techStack.map((tech)=>{
                 return(
                     <div className='skill' id={tech.id}>
-                        <img src={tech.icon}></img>
+                        <img alt="pic" src={tech.icon}></img>
                         <p>
                             {tech.name}
                         </p>

@@ -148,8 +148,9 @@ form input,textarea{
 .form-btn{
     margin-top: 1rem;
     align-items: center;
-    display: flex;
+    display: block;
     justify-content: center;
+    margin: auto;
 }
 .form-btn > button:hover{
     background-color: rgb(246, 203, 11);

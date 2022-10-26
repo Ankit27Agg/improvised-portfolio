@@ -1,11 +1,11 @@
 import React from 'react'
 import './ContactMe.css'
 // import minion from '../../Images/minion.gif'
-// import { Button } from '@mui/material'
+import { Button } from '@mui/material'
 const ContactMe = () => {
     const styling = {
         background: 'black',
-        border: '2px solid yellow'
+        border: '2px solid rgb(246, 203, 11)'
     }
     return (
         <div className='contact' id='contact-me'>
@@ -23,10 +23,10 @@ const ContactMe = () => {
                                 worltresting@gmail.com
                             </a>
                             <div className='cv'>
-                                {/* <a href='https://docs.google.com/document/d/1PumEu2nbKvNyB_1Al5RWYmSki2DM3IQk/
+                                <a href='https://docs.google.com/document/d/1PumEu2nbKvNyB_1Al5RWYmSki2DM3IQk/
             edit?usp=sharing&ouid=105663189767640127668&rtpof=true&sd=true'
                                     target="_blank"
-                                    rel="noopener noreferrer"><Button variant="outlined" disableRipple>Resume</Button></a> */}
+                                    rel="noopener noreferrer"><Button variant="outlined" disableRipple>Resume</Button></a>
                             </div>
                         </div>
                         <div className='minion'>
@@ -46,9 +46,9 @@ const ContactMe = () => {
                                 <label htmlFor='message'>Message</label>
                                 <textarea name='message' id='message' cols='25' rows='5' required></textarea>
                                 <div className='form-btn'>
-                                    {/* <Button sx={styling} type='submit' variant="contained">
+                                    <Button sx={styling} type='submit' variant="contained">
                                         Send
-                                    </Button> */}
+                                    </Button>
                                 </div>
                             </form>
                         </div>
